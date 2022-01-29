@@ -12,7 +12,7 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-    user_data = pickle.loads(open('user_data (1)', "rb").read())
+    user_data = pickle.loads(open('user_data (5)', "rb").read())
     name=request.form.get('name')
     place = request.form.get('place')
     branch = request.form.get('branch')
